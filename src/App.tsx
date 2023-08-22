@@ -33,7 +33,9 @@ function App() {
 
   const handleCalculate = () => {
     if (distance === '') {
+      setShowResult(false);
       setError(true);
+      setResult(0);
     } else {
       const distanceNumber = Number(distance);
       const frecuencyNumber = Number(frecuency);
