@@ -31,6 +31,7 @@ const appStyle = {
     width: '100%',
     display: 'flex',
     flexDirection: 'column',
+    gap: 2,
   },
   buttonsContainer: {
     display: 'flex',

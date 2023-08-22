@@ -47,7 +47,7 @@ export default function Inputs({
         focused
         error={error}
         autoFocus
-        helperText="Enter the distance between the two antennas"
+        helperText={error && 'Enter the distance between the two antennas'}
       />
       <FormControl fullWidth>
         <InputLabel
