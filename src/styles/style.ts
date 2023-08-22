@@ -5,6 +5,7 @@ const appStyle = {
     border: '1px solid #00acc1',
     px: 4,
     pt: 4,
+    m: 'auto',
   },
   calculatorContainer: {
     display: 'flex',

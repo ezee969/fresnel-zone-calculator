@@ -2,6 +2,7 @@ import { ChangeEvent, useState } from 'react';
 // Components/ui
 import { Box, SelectChangeEvent, Fade } from '@mui/material';
 import './styles/App.css';
+import './styles/stars-animation.css';
 import appStyle from './styles/style';
 import theme from './theme';
 import { ThemeProvider } from '@mui/material/styles';
@@ -60,32 +61,42 @@ function App() {
   };
 
   return (
-    <ThemeProvider theme={theme}>
-      <Box className={'animated animatedFadeInUp fadeInUp'} sx={appStyle.container}>
-        {!showInfo ? (
-          <Fade in={!showInfo}>
-            <Box sx={appStyle.calculatorContainer}>
-              <Title />
-              <Inputs
-                distance={distance}
-                handleDistanceChange={handleDistanceChange}
-                error={error}
-                frecuency={frecuency}
-                handleFrecuencyChange={handleFrecuencyChange}
-              />
-              <Footer
-                showInfoHandler={showInfoHandler}
-                handleCalculate={handleCalculate}
-                handleReset={handleReset}
-              />
-              <Result result={result} showResult={showResult} />
-            </Box>
-          </Fade>
-        ) : (
-          <Info showInfoHandler={showInfoHandler} showInfo={showInfo} />
-        )}
-      </Box>
-    </ThemeProvider>
+    <>
+      <section className="wrapper">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+      </section>
+      <ThemeProvider theme={theme}>
+        <Box
+          className={'animated animatedFadeInUp fadeInUp'}
+          sx={appStyle.container}
+        >
+          {!showInfo ? (
+            <Fade in={!showInfo}>
+              <Box sx={appStyle.calculatorContainer}>
+                <Title />
+                <Inputs
+                  distance={distance}
+                  handleDistanceChange={handleDistanceChange}
+                  error={error}
+                  frecuency={frecuency}
+                  handleFrecuencyChange={handleFrecuencyChange}
+                />
+                <Footer
+                  showInfoHandler={showInfoHandler}
+                  handleCalculate={handleCalculate}
+                  handleReset={handleReset}
+                />
+                <Result result={result} showResult={showResult} />
+              </Box>
+            </Fade>
+          ) : (
+            <Info showInfoHandler={showInfoHandler} showInfo={showInfo} />
+          )}
+        </Box>
+      </ThemeProvider>
+    </>
   );
 }
 
