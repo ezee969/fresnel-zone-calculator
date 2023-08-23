@@ -41,13 +41,13 @@ export default function Inputs({
         }}
         value={distance}
         onChange={handleDistanceChange}
-        label="Distance"
+        label="Distancia"
         fullWidth
         variant="outlined"
         focused
         error={error}
         autoFocus
-        helperText={error && 'Enter the distance between the two antennas'}
+        helperText={error && 'Ingrese la distancia entre las dos antenas'}
       />
       <FormControl fullWidth>
         <InputLabel
@@ -56,12 +56,12 @@ export default function Inputs({
             color: 'primary.main',
           }}
         >
-          Frecuency
+          Frecuencia
         </InputLabel>
         <Select
           labelId="demo-simple-select-label"
           value={frecuency}
-          label="Frecuency"
+          label="Frecuencia"
           onChange={handleFrecuencyChange}
           sx={appStyle.select}
         >

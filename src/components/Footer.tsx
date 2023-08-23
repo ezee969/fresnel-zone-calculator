@@ -19,7 +19,7 @@ export default function Footer({
       <Box sx={appStyle.footerInfoContainer}>
         <Tooltip
           sx={appStyle.tooltip}
-          title="Calculator used to calculate the radius of the Fresnel zone"
+          title="Calculadora usada para obtener la zona Fresnel"
         >
           <InfoIcon />
         </Tooltip>
@@ -28,15 +28,15 @@ export default function Footer({
           fontSize={15}
           onClick={showInfoHandler}
         >
-          About the Fresnel Zone
+          Sobre la zona Fresnel
         </Typography>
       </Box>
       <Box sx={appStyle.buttonsContainer}>
         <Button onClick={handleCalculate} variant="contained" size="large">
-          Calculate
+          Calcular
         </Button>
         <Button onClick={handleReset} variant="outlined" size="large">
-          Reset
+          Limpiar
         </Button>
       </Box>
     </Box>

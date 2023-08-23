@@ -4,9 +4,9 @@ import { Box } from '@mui/material';
 const Title = () => {
   return (
     <Box id="title">
-      <span>FRESNEL ZONE </span>
+      <span>ZONA FRESNEL </span>
       <br />
-      <span>CALCULATOR </span>
+      <span>CALCULADORA </span>
     </Box>
   );
 };

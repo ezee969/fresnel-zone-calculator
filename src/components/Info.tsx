@@ -32,26 +32,27 @@ const Info = ({ showInfoHandler, showInfo }: Props) => {
         </Box>
         <Box sx={appStyle.infoTextContainer}>
           <Typography variant="h4" sx={{ mb: 3 }} fontWeight={'bold'}>
-            What is the Fresnel Zone?
+            Que es la zona Fresnel?
           </Typography>
           <Typography variant="body1">
-            The Fresnel zone is the area around the visual line-of-sight that radio
-            waves spread out into after they leave the antenna. This area must be
-            free from obstructions to ensure the received signal strength is
-            adequate.
+            La zona de Fresnel es el área alrededor de la línea de visión visual que
+            la radio las ondas se propagan después de salir de la antena. Esta área
+            debe ser libre de obstrucciones para garantizar que la intensidad de la
+            señal recibida sea adecuado.
           </Typography>
           <Typography variant="body1">
-            The radius of the zone varies with the square root of the wavelength and
-            inversely with the square root of the distance between the transmitter
-            and receiver. The radius of the inner (first) Fresnel zone is given by:
+            El radio de la zona varía con la raíz cuadrada de la longitud de onda y
+            inversamente con la raíz cuadrada de la distancia entre el transmisor y
+            receptor. El radio de la (primera) zona de Fresnel interior viene dado
+            por:
           </Typography>
           <Typography variant="body1" fontWeight={'bold'}>
             r = 8.656√(d/f)
           </Typography>
           <Typography variant="body1">
-            where r is the radius of the inner Fresnel zone in meters, d is the
-            distance between the transmitter and receiver in kilometers, and f is the
-            frequency of the signal in GHz.
+            donde r es el radio de la zona interior de Fresnel en metros, d es el
+            distancia entre el transmisor y el receptor en kilómetros, y f es la
+            frecuencia de la señal en GHz.
           </Typography>
         </Box>
       </Box>

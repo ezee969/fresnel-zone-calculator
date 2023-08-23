@@ -1,6 +1,6 @@
 import { ChangeEvent, useState } from 'react';
 // Components/ui
-import { Box, SelectChangeEvent, Fade } from '@mui/material';
+import { Box, SelectChangeEvent, Fade, Typography } from '@mui/material';
 import './styles/App.css';
 import './styles/stars-animation.css';
 import appStyle from './styles/style';
@@ -88,6 +88,7 @@ function App() {
                   handleCalculate={handleCalculate}
                   handleReset={handleReset}
                 />
+                <Typography variant="h5">Por Ezequiel Olivero</Typography>
                 <Result result={result} showResult={showResult} />
               </Box>
             </Fade>

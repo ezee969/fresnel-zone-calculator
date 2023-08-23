@@ -12,7 +12,7 @@ const Result = ({ result, showResult }: Props) => {
     <Fade in={showResult}>
       <Box sx={appStyle.resultContainer}>
         <Typography variant="button" fontSize={19} fontWeight={'bold'}>
-          Result: {result} Metters
+          Resultado: {result} Metros
         </Typography>
       </Box>
     </Fade>
